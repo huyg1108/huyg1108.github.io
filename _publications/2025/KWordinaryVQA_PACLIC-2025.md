@@ -21,5 +21,6 @@ authors:
 links:
   Paper: https://aclanthology.org/2025.paclic-1.31/
   Data: https://www.kaggle.com/datasets/huyg1108/kwordinaryvqa
+  Poster: assets/posters/Poster-KWordinaryVQA-Paclic-2025.pdf
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---

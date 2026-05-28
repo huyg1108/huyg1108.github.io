@@ -21,5 +21,6 @@ authors:
   - Huy Tien Nguyen
 links:
   Paper: https://ieeexplore.ieee.org/abstract/document/11309431/
+  Slide: /assets/slides/KSE2025_slide.pdf
   # Code: https://github.com/leduygit/aes-llm-augmentation
 ---
