@@ -1,61 +1,69 @@
-primary_name: "Your Name"
+primary_name: "Huy Trieu"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Huy Trieu"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: Undergraduate Student
+- name: VNU-HCM University of Science
+  logo: /assets/images/badges/hcmus-logo.png
 
 
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+email: "tghuy1108@email.com"
+cv_link: /assets/files/cv.pdf
+gscholar: LrA54coAAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: huyg1108
+# twitter: HuyG1108  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+linkedin: huy-trieu-825369201
+orcid: 0009-0002-6681-8334
 
-short_bio_text_justify: false
+short_bio_text_justify: true
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+  I'm currently pursuing a B.S. in Information Technology, majoring in Knowledge Engineering at the University of Science (VNU-HCM), where I develop my passion for building trustworthy, intelligent systems. Since joining AI-Thena group at FIT-HCMUS in 2024 under the supervision of <a href="https://scholar.google.com/citations?user=MGeNXaMAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Tung Le</a> and <a href="https://scholar.google.com/citations?user=WBCZ2DcAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Huy Tien Nguyen</a>, I have explored problems in multimodal fact verification, visual question answering, and legal information retrieval, often leveraging large language models and retrieval-based reasoning techniques.
   </p>
-  <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
-  </p>
+# Looking ahead, I aim to channel these AI capabilities into a new frontier: automated fuzzing for Web API security, with an emphasis on oracle inference and uncovering subtle response-level authorization vulnerabilities.
 
 portrait_url: /assets/images/photos/portrait.jpg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+# - name: VNU-HCM University of Science
+#   logo: /assets/images/badges/MIT_Social_circle.png
+#   position: >- 
+#     Department of Electrical Engineering and Computer Science <br/>
+#     Ph.D. Student
+#   date: Sep. 2024 - present
+- name: VNU-HCM University of Science
+  logo: /assets/images/badges/hcmus-logo.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+    Department of Knowledge Engineering <br/>
+    B.S. in Information Technology <br/>
+  date: Sep. 2022 - Oct. 2026
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+- name: Le Hong Phong High School for the Gifted
+  logo: /assets/images/badges/lhp-logo.png
+  position: Specialized Mathematics Class
+  date: Aug. 2019 - May. 2022
+
+
+experience:
+- name: AI-Thena, FIT-HCMUS
+  logo: /assets/images/badges/hcmus-logo.png
+  position: Research Student
+  date: Mar. 2024 - Present
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Academic Merit Scholarship in 5 semesters
+  date: 2022-2026
+- name: 1st Place in Legal Document Retrieval task - ALQAC
+  date: 2025
+- name: Dean's List - FIT-HCMUS
+  date: 2023-2024
+- name: 3rd Place in City-Level Math Competition
+  date: 2021-2022
+- name: 2nd Place in City-Level Math Competition
+  date: 2018-2019
