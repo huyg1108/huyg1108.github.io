@@ -8,6 +8,6 @@ date: 2026-05-30 00:01:00 +0800
     <h2>Welcome to My Showcase!</h2>
     <hr />
     <p>
-        A casual showcase of photos and little bits of life — friends, places, and things I find interesting. Not serious, just stuff I felt like sharing.
+        A casual showcase of photos and little bits of life — things I find interesting. Not serious, just stuff I felt like sharing.
     </p>
 </div>
