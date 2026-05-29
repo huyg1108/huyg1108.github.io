@@ -27,8 +27,8 @@ short_bio: >-
 # Looking ahead, I aim to channel these AI capabilities into a new frontier: automated fuzzing for Web API security, with an emphasis on oracle inference and uncovering subtle response-level authorization vulnerabilities.
 
 portrait_url: /assets/images/photos/my_face_lol.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+# portrait_caption: >-
+#   Photo by my friend when we were hanging out in the city. I look like I'm plotting something, but actually, I'm just trying to find the best angle for the photo.
 
 education:
 # - name: VNU-HCM University of Science
