@@ -5,5 +5,5 @@ date: 2026-05-29 00:02:00 +0800
 group: Food
 ---
 <div>
-  <img data-src="{{ 'assets/images/showcase/ga_ran.jpg' | relative_url }}" class="lazy w-100 rounded-xl" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="ga_ran">
+  <img data-src="{{ 'assets/images/showcase/ga_ran.webp' | relative_url }}" class="lazy w-100 rounded-xl" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" alt="ga_ran">
 </div>
