@@ -10,7 +10,7 @@ pub_date:       "2025"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   KWordinaryVQA builds a scalable food-domain VQA dataset from images using keyword-driven LLM generation, exposing key trade-offs between accuracy, semantic relevance, and inference cost in modern vision-language models.
-cover:          /assets/images/covers/KWordinaryVQA-cover.png
+cover:          /assets/images/covers/KWordinaryVQA-cover.webp
 authors:
   - Huy Trieu
   - Thanh Thai Nguyen

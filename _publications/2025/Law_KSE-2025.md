@@ -10,7 +10,7 @@ pub_date:       "2025"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   A dynamic hybrid legal retrieval system combines learned rankers and LLM reasoning to achieve strong Vietnamese legal retrieval and QA performance in ALQAC 2025.
-cover:          /assets/images/covers/law_cover.jpg
+cover:          /assets/images/covers/law_cover.webp
 authors:
   - Huy Trieu
   - Dang Phuong Nam Doan

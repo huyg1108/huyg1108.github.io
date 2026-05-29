@@ -10,7 +10,7 @@ pub_date:       "2026"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
   A band-aware LLM augmentation framework improves automated IELTS essay scoring by targeting weak score bands and reducing imbalance-driven prediction bias.
-cover:          /assets/images/covers/ielts_cover.png
+cover:          /assets/images/covers/ielts_cover.webp
 authors:
   - Duy Anh Le
   - Thanh Nghia Vo
