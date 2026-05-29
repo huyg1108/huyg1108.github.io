@@ -8,3 +8,8 @@ vendor/
 Gemfile.lock
 
 .DS_Store
+
+# Ignore specific python scripts anywhere in the repo
+change_resol.py
+to_webp.py
+
