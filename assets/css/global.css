@@ -138,7 +138,7 @@ html[data-theme="dark"] .navbar.navbar-light .nav-item.active .nav-link {
 }
 
 html[data-theme="dark"] hr {
-    border-color: var(--muted-color);
+    border-color: var(--toggle-border);
 }
 
 a {
@@ -154,7 +154,11 @@ a {
 }
 
 html[data-theme="dark"] .border-gray {
-    border-color: var(--muted-color) !important;
+    border-color: var(--toggle-border) !important;
+}
+
+html[data-theme="dark"] .border-top {
+    border-top-color: var(--toggle-border) !important;
 }
 
 .page-transition {
