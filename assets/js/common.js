@@ -75,9 +75,14 @@ $(function () {
         "columnWidth": ".grid-sizer"
     });
     // layout Masonry after each image loads
-    $grid.imagesLoaded().progress(function () {
-        $grid.masonry('layout');
-    });
+    $grid.imagesLoaded()
+        .progress(function () {
+            $grid.masonry('layout');
+        })
+        .always(function () {
+            $grid.addClass('is-ready');
+            $grid.masonry('layout');
+        });
 
     $grid.find('img').on('load', function () {
         $grid.masonry('layout');

@@ -189,6 +189,15 @@ html[data-theme="dark"] .border-gray {
     right: 4px;
 }
 
+.grid {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.grid.is-ready {
+    opacity: 1;
+}
+
 .theme-toggle-thumb {
     position: absolute;
     left: 2px;
