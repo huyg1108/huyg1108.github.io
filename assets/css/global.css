@@ -107,7 +107,6 @@ html[data-theme="dark"] .text-dark {
 
 html[data-theme="dark"] .author-name {
     color: #dde3ee !important;
-    font-weight: 600;
 }
 
 .author-name--primary {
