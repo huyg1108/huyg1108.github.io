@@ -105,6 +105,21 @@ html[data-theme="dark"] .text-dark {
     color: var(--text-color) !important;
 }
 
+html[data-theme="dark"] .author-name {
+    color: #dde3ee !important;
+    font-weight: 600;
+}
+
+.author-name--primary {
+    font-weight: 800;
+    color: var(--text-color) !important;
+}
+
+html[data-theme="dark"] .author-name--primary {
+    color: #ffffff !important;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.18);
+}
+
 html[data-theme="dark"] .navbar.navbar-light .navbar-brand,
 html[data-theme="dark"] .navbar.navbar-light .navbar-toggler {
     color: var(--text-color) !important;

@@ -31,16 +31,25 @@
         {%- assign name = key -%}
     {%- endif -%}
 
+    {%- assign display_name = name | append: mark -%}
+
+    {%- if info['italic'] == true -%}
+        {%- assign display_name = display_name | prepend: "<em>" | append: "</em>" -%}
+    {%- endif -%}
+
     {%- if info['bold'] == true -%}
-        {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
-    {%- else -%}
-        {%- assign display_name = name | append: mark -%}
+        {%- assign display_name = display_name | prepend: "<strong>" | append: "</strong>" -%}
     {%- endif -%}
     
+    {%- assign author_classes = "text-body author-name" -%}
+    {%- if info['bold'] == true -%}
+        {%- assign author_classes = author_classes | append: " author-name--primary" -%}
+    {%- endif -%}
+
     {%- if info['url'] -%}
-        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
+        <a class="{{ author_classes }}" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
     {%- else -%}
-        <span class="text-body">
+        <span class="{{ author_classes }}">
             {{ display_name }}{%- if forloop.index < authors.size -%}, {% endif -%}
         </span>
     {%- endif -%}
