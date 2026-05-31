@@ -13,7 +13,7 @@ abstract: >-
 cover:          /assets/images/covers/marc_KES2026.webp
 authors:
   - Huy Trieu
-  - Duy-Minh Nguyen Tran
+  - Duy Minh Nguyen Tran
   - Huy Tien Nguyen
   - Tung Le
 links:
