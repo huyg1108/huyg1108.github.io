@@ -1,28 +1,71 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
-    lazyLoadOptions = {
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        effectTime: 300,
-        placeholder: "",
-        onError: function(element) {
-            console.log('[lazyload] Error loading ' + element.data('src'));
-        },
-        afterLoad: function(element) {
-            if (element.is('img')) {
-                // remove background-image style
-                element.css('background-image', 'none');
-                element.css('min-height', '0');
-            } else if (element.is('div')) {
-                // set the style to background-size: cover; 
-                element.css('background-size', 'cover');
-                element.css('background-position', 'center');
-            }
+    var themeStorageKey = 'theme';
+    var $html = $('html');
+
+    function updateThemeToggle(theme) {
+        var $button = $('#theme-toggle');
+        if (!$button.length) {
+            return;
         }
+
+        var isDark = theme === 'dark';
+        var nextTitle = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+
+        $button.attr('aria-checked', isDark ? 'true' : 'false');
+        $button.attr('title', nextTitle);
     }
 
-    $('img.lazy, div.lazy:not(.always-load)').Lazy({visibleOnly: true, ...lazyLoadOptions});
-    $('div.lazy.always-load').Lazy({visibleOnly: false, ...lazyLoadOptions});
+    function applyTheme(theme) {
+        $html.attr('data-theme', theme);
+        updateThemeToggle(theme);
+    }
+
+    function getPreferredTheme() {
+        var storedTheme = localStorage.getItem(themeStorageKey);
+        if (storedTheme) {
+            return storedTheme;
+        }
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+
+        return 'light';
+    }
+
+    var initialTheme = getPreferredTheme();
+    applyTheme(initialTheme);
+
+    $('#theme-toggle').on('click', function () {
+        var nextTheme = $html.attr('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(themeStorageKey, nextTheme);
+        applyTheme(nextTheme);
+    });
+
+    $('img.lazy').each(function () {
+        var $img = $(this);
+        var src = $img.data('src');
+        if (src) {
+            $img.attr('src', src);
+            $img.removeAttr('data-src');
+        }
+        $img.removeClass('lazy');
+    });
+
+    $('div.lazy').each(function () {
+        var $div = $(this);
+        var src = $div.data('src');
+        if (src) {
+            $div.css({
+                'background-image': 'url(' + src + ')',
+                'background-size': 'cover',
+                'background-position': 'center'
+            });
+            $div.removeAttr('data-src');
+        }
+        $div.removeClass('lazy');
+    });
 
     $('[data-toggle="tooltip"]').tooltip()
 
@@ -36,7 +79,7 @@ $(function () {
         $grid.masonry('layout');
     });
 
-    $(".lazy").on("load", function () {
+    $grid.find('img').on('load', function () {
         $grid.masonry('layout');
     });
 })
