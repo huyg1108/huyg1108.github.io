@@ -143,6 +143,17 @@ html[data-theme="dark"] .border-gray {
     border-color: var(--muted-color) !important;
 }
 
+.page-transition {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.35s ease, transform 0.45s ease;
+}
+
+.page-transition.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .theme-toggle {
     border: none;
     color: var(--text-color);

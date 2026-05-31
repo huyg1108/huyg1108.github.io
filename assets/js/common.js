@@ -87,4 +87,8 @@ $(function () {
     $grid.find('img').on('load', function () {
         $grid.masonry('layout');
     });
+
+    requestAnimationFrame(function () {
+        $('.page-transition').addClass('is-visible');
+    });
 })
