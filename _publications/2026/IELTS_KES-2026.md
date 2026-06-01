@@ -3,9 +3,10 @@ title:          "Improving Automated Essay Scoring with Targeted LLM-Based Data 
 date:           2026-05-02 00:01:00 +0800
 selected:       false
 pub:            "30th International Conference on Knowledge Based and Intelligent information and Engineering Systems (KES)"
-pub_pre:        "Accepted at "
+# pub_pre:        "Accepted at "
 # pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Oral</span>'
+core_rank: "B"
 pub_date:       "2026"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-

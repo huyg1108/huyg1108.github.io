@@ -11,7 +11,29 @@
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+            {% assign core_rank = item.core_rank | upcase | strip %}
+            {% assign journal_quartile = item.journal_quartile | upcase | strip %}
+            {% assign core_badge_class = "" %}
+            {% case core_rank %}
+            {% when "A*" %}{% assign core_badge_class = "badge-core-a-star" %}
+            {% when "A" %}{% assign core_badge_class = "badge-core-a" %}
+            {% when "B" %}{% assign core_badge_class = "badge-core-b" %}
+            {% when "C" %}{% assign core_badge_class = "badge-core-c" %}
+            {% when "N/A" %}{% assign core_badge_class = "badge-core-na" %}
+            {% endcase %}
+            {% assign journal_badge_class = "" %}
+            {% case journal_quartile %}
+            {% when "Q1" %}{% assign journal_badge_class = "badge-journal-q1" %}
+            {% when "Q2" %}{% assign journal_badge_class = "badge-journal-q2" %}
+            {% when "Q3" %}{% assign journal_badge_class = "badge-journal-q3" %}
+            {% when "Q4" %}{% assign journal_badge_class = "badge-journal-q4" %}
+            {% endcase %}
+            <p class="mt-0 mb-0 small">
+                {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }}
+                {% if core_badge_class != "" %}<span class="badge badge-pill badge-publication {{ core_badge_class }}">CORE {{ core_rank }}</span>{% endif %}
+                {% if journal_badge_class != "" %}<span class="badge badge-pill badge-publication {{ journal_badge_class }}">{{ journal_quartile }}</span>{% endif %}
+                {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
+            </p>
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
             
             <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
@@ -35,7 +57,29 @@
             <div>
                 <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
                 <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></p>
+                {% assign core_rank = item.core_rank | upcase | strip %}
+                {% assign journal_quartile = item.journal_quartile | upcase | strip %}
+                {% assign core_badge_class = "" %}
+                {% case core_rank %}
+                {% when "A*" %}{% assign core_badge_class = "badge-core-a-star" %}
+                {% when "A" %}{% assign core_badge_class = "badge-core-a" %}
+                {% when "B" %}{% assign core_badge_class = "badge-core-b" %}
+                {% when "C" %}{% assign core_badge_class = "badge-core-c" %}
+                {% when "N/A" %}{% assign core_badge_class = "badge-core-na" %}
+                {% endcase %}
+                {% assign journal_badge_class = "" %}
+                {% case journal_quartile %}
+                {% when "Q1" %}{% assign journal_badge_class = "badge-journal-q1" %}
+                {% when "Q2" %}{% assign journal_badge_class = "badge-journal-q2" %}
+                {% when "Q3" %}{% assign journal_badge_class = "badge-journal-q3" %}
+                {% when "Q4" %}{% assign journal_badge_class = "badge-journal-q4" %}
+                {% endcase %}
+                <p class="mt-0 mb-0 small">
+                    {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }}
+                    {% if core_badge_class != "" %}<span class="badge badge-pill badge-publication {{ core_badge_class }}">CORE {{ core_rank }}</span>{% endif %}
+                    {% if journal_badge_class != "" %}<span class="badge badge-pill badge-publication {{ journal_badge_class }}">{{ journal_quartile }}</span>{% endif %}
+                    {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
+                </p>
                 <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
                 
                 <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">

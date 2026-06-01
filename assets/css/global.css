@@ -276,6 +276,51 @@ html[data-theme="dark"] .theme-toggle-icon-dark {
     font-size: 100%;
 }
 
+.badge-core-a-star {
+    background-color: #7c2d12;
+    color: #ffffff;
+}
+
+.badge-core-a {
+    background-color: #b45309;
+    color: #ffffff;
+}
+
+.badge-core-b {
+    background-color: #d97706;
+    color: #ffffff;
+}
+
+.badge-core-c {
+    background-color: #eead3d;
+    color: #ffffff;
+}
+
+.badge-core-na {
+    background-color: #9ca3af;
+    color: #ffffff;
+}
+
+.badge-journal-q1 {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+.badge-journal-q2 {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.badge-journal-q3 {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+
+.badge-journal-q4 {
+    background-color: #db2777;
+    color: #ffffff;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
