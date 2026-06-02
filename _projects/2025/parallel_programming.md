@@ -14,7 +14,4 @@ tech:
   - CNN
   - cuML
 github: https://github.com/VoThinhVuong/Parallel-Programing-Capstone
-links:
-  Report: https://github.com/VoThinhVuong/Parallel-Programing-Capstone/blob/main/CSC14120_2025_Final%20Project.pdf
-  Results: https://github.com/VoThinhVuong/Parallel-Programing-Capstone/blob/main/ket_qua.md
 ---

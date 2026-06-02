@@ -2,8 +2,6 @@
 layout: default
 title : Projects
 navbar_title: Projects
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
 {% assign projects_by_year = site.projects | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
@@ -12,11 +10,13 @@ body_attr: >-
     <div class="col-12 col-lg-10">
         {% for year in projects_by_year %}
         {% assign num_projects = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/project_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
+        <div id="year-{{ year.name }}" class="year-section">
+            <h2 class="pt-4">{{ year.name }}</h2>
+            <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+                {% for item in year.items %}
+                    {% include widgets/project_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+                {% endfor %}
+            </div>
         </div>
         {% endfor %}
     </div>
@@ -30,3 +30,57 @@ body_attr: >-
     </div>
 
 </div>
+
+<script>
+(function() {
+    var links = document.querySelectorAll('#navbar-year .nav-link');
+    var sections = document.querySelectorAll('.year-section');
+
+    function activate(link) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        if (link) link.classList.add('active');
+    }
+
+    // Click: instant scroll + activate immediately (ignore scroll event briefly)
+    var clicked = false;
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (!target) return;
+
+            activate(this);
+            clicked = true;
+
+            var top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+            window.scrollTo(0, Math.max(0, top));
+        });
+    });
+
+    function refreshActive() {
+        var viewTop = window.pageYOffset + 75;
+        var closest = null;
+        var best = Infinity;
+
+        sections.forEach(function(s) {
+            var d = s.offsetTop - viewTop;
+            if (d <= 0 && Math.abs(d) < best) { best = Math.abs(d); closest = s.id; }
+        });
+
+        if (closest) {
+            links.forEach(function(l) {
+                l.classList.toggle('active', l.getAttribute('href') === '#' + closest);
+            });
+        }
+    }
+
+    // Scroll: update active pill
+    window.addEventListener('scroll', function() {
+        if (clicked) { clicked = false; return; }
+        refreshActive();
+    });
+
+    // Highlight the most recent year on page load
+    refreshActive();
+})();
+</script>

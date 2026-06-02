@@ -18,4 +18,6 @@ tech:
   - Wokwi
   - JavaScript
 github: https://github.com/nghessss/IoT
+links:
+  Wokwi: https://github.com/huyg1108/IoT-final/tree/main/Door 
 ---

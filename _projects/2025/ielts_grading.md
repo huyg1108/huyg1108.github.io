@@ -5,7 +5,7 @@ selected:       true
 description:   "Developed a full-stack AI system for IELTS Writing Task 2 feedback, combining essay submission, automated band-score prediction, IELTS criterion breakdowns, grammar suggestions, and lexical/coherence analysis through a Next.js frontend, FastAPI backend, MongoDB storage, and NLP/LLM model services."
 teammates:
   - Huy Trieu
-  - Vo Thanh Nghia
+  - Thanh Nghia Vo
 tech:
   - MLOps
   - Next.js
