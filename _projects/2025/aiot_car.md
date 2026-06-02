@@ -16,7 +16,5 @@ tech:
   - TensorFlow Lite
   - MQTT
   - ESP32
-  - Arduino/C++
-  - Node-RED
 github: https://github.com/huyg1108/hand-gesture-recognition-mediapipe-for-car
 ---

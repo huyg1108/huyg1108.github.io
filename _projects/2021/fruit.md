@@ -9,9 +9,7 @@ teammates:
   - Nguyen Tan Bao Le
 tech:
   - Python
-  - TensorFlow
-  - Keras
-  - InceptionV3
+  - TensorFlow/Keras
   - OpenCV
   - scikit-learn
   - Flask

@@ -11,13 +11,8 @@ teammates:
 tech:
   - Python
   - PyTorch
-  - Hugging Face Transformers
   - T5
   - NLP
-  - Machine Translation
   - Web Scraping
-  - BeautifulSoup
-  - Pandas
-  - NLTK
 github: https://github.com/huyg1108/ancient_vie-to-eng-MT
 ---

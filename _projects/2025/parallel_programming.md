@@ -8,7 +8,6 @@ teammates:
   - Huy Trieu
   - Thinh Vuong Vo
 tech:
-  - Parallel Programming
   - C
   - CUDA
   - CNN

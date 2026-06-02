@@ -9,14 +9,11 @@ teammates:
   - Thanh Nghia Vo
 tech:
   - ESP32
-  - Arduino/C++
+  - Arduino
   - Python
   - OpenCV
-  - Face Recognition
   - MQTT
   - Node-RED
-  - Wokwi
-  - JavaScript
 github: https://github.com/nghessss/IoT
 links:
   Wokwi: https://github.com/huyg1108/IoT-final/tree/main/Door 

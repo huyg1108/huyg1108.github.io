@@ -12,7 +12,5 @@ tech:
   - TensorFlow/Keras
   - OpenCV
   - Pandas
-  - NumPy
-  - HTML/CSS
 github: https://github.com/huyg1108/music-recommender
 ---

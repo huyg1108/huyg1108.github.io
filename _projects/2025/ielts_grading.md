@@ -7,17 +7,12 @@ teammates:
   - Huy Trieu
   - Thanh Nghia Vo
 tech:
-  - MLOps
+  - Python
   - Next.js
-  - TypeScript
-  - Tailwind CSS
   - FastAPI
   - MongoDB
   - Docker
-  - Google Cloud
-  - Gemma
-  - BERT
-  - CoEdIT
+  - LLM
 github: https://github.com/nghessss/AI-Powered-Automated-Essay-Scoring-System
 links:
   Slide: /assets/slides/2025_LLM_ielts.pdf
