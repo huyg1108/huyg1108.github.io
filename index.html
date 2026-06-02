@@ -18,9 +18,17 @@ navbar_title: Home
 
 {% if site.data.display.homepage.show_selected_publications %}
     {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% 
-        include widgets/publication_card.html 
+    {%
+        include widgets/publication_card.html
         publications=pubs
         title='<i class="fas fa-star"></i> Selected Publications'
+    %}
+{% endif %}
+
+{% if site.data.display.homepage.show_selected_projects %}
+    {% assign projs = site.projects | sort: "date" | reverse | where: "selected", true %}
+    {%
+        include widgets/project_card.html
+        projects=projs
     %}
 {% endif %}

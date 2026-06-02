@@ -13,3 +13,5 @@ Gemfile.lock
 change_resol.py
 to_webp.py
 
+.codegraph
+.claude
