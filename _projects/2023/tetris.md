@@ -13,7 +13,6 @@ tech:
   - C++
   - SDL2
   - OOP
-  - Game Development
-  - Makefile
+  - Game
 github: https://github.com/nghessss/tetris-game-oop-project
 ---

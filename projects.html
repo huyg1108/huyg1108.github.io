@@ -8,6 +8,16 @@ navbar_title: Projects
 
 <div class="row">
     <div class="col-12 col-lg-10">
+        <div class="card border-0 shadow-sm bg-white my-3">
+            <div class="p-4">
+                <h2><i class="fas fa-code"></i> My Projects</h2>
+                <hr />
+                <p>
+                    Some academic projects and course assignments I completed during my studies, along with a few side ideas I explored along the way.
+                </p>
+            </div>
+        </div>
+
         {% for year in projects_by_year %}
         {% assign num_projects = year.items | size %}
         <div id="year-{{ year.name }}" class="year-section">
