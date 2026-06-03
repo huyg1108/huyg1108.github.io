@@ -29,9 +29,6 @@ navbar_title: Projects
                 {% for item in year.items %}
                     {% include widgets/project_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
                 {% endfor %}
-                {% if num_projects == 1 %}
-                <div style="height: 150px;"></div>
-                {% endif %}
             </div>
         </div>
         {% endfor %}
@@ -88,9 +85,17 @@ navbar_title: Projects
             var visibleBottom = Math.min(sectionBottom, viewTop + viewportHeight);
             var visibleHeight = Math.max(0, visibleBottom - visibleTop);
             
-            // Nếu section này có nhiều phần visible nhất thì chọn
-            if (visibleHeight > maxVisible) {
-                maxVisible = visibleHeight;
+            // Lấy số project từ data attribute
+            var projectCount = parseInt(s.getAttribute('data-project-count') || '1', 10);
+            
+            // Thêm hệ số khuếch đại cho các section có ít project để dễ detect hơn
+            // Section càng ít project thì hệ số càng lớn, giúp nó được chọn dễ hơn
+            var weightMultiplier = projectCount <= 1 ? 2.5 : (projectCount === 2 ? 1.5 : 1.0);
+            var weightedVisible = visibleHeight * weightMultiplier;
+            
+            // Nếu section này có nhiều phần visible nhất (sau khi nhân hệ số) thì chọn
+            if (weightedVisible > maxVisible) {
+                maxVisible = weightedVisible;
                 closest = s.id;
             }
         });
