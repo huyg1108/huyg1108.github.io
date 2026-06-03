@@ -23,7 +23,7 @@ navbar_title: Projects
 
         {% for year in projects_by_year %}
         {% assign num_projects = year.items | size %}
-        <div id="year-{{ year.name }}" class="year-section">
+        <div id="year-{{ year.name }}" class="year-section" data-project-count="{{ num_projects }}">
             <h2 class="pt-4">{{ year.name }}</h2>
             <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
                 {% for item in year.items %}
@@ -72,12 +72,32 @@ navbar_title: Projects
 
     function refreshActive() {
         var viewTop = window.pageYOffset + 75;
+        var viewportHeight = window.innerHeight - 75;
         var closest = null;
-        var best = Infinity;
+        var maxVisible = -1;
 
         sections.forEach(function(s) {
-            var d = s.offsetTop - viewTop;
-            if (d <= 0 && Math.abs(d) < best) { best = Math.abs(d); closest = s.id; }
+            var sectionTop = s.offsetTop;
+            var sectionBottom = sectionTop + s.offsetHeight;
+            
+            // Tính phần giao giữa section và viewport
+            var visibleTop = Math.max(sectionTop, viewTop);
+            var visibleBottom = Math.min(sectionBottom, viewTop + viewportHeight);
+            var visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            
+            // Lấy số project từ data attribute
+            var projectCount = parseInt(s.getAttribute('data-project-count') || '1', 10);
+            
+            // Thêm hệ số khuếch đại cho các section có ít project để dễ detect hơn
+            // Section càng ít project thì hệ số càng lớn, giúp nó được chọn dễ hơn
+            var weightMultiplier = projectCount <= 1 ? 2.5 : (projectCount === 2 ? 1.5 : 1.0);
+            var weightedVisible = visibleHeight * weightMultiplier;
+            
+            // Nếu section này có nhiều phần visible nhất (sau khi nhân hệ số) thì chọn
+            if (weightedVisible > maxVisible) {
+                maxVisible = weightedVisible;
+                closest = s.id;
+            }
         });
 
         if (closest) {
