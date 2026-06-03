@@ -2,7 +2,8 @@
 title:          "MARC: Agent-Based Adaptive Routing for Multimodal Fact Verification"
 date:           2026-05-28 00:01:00 +0800
 selected:       true
-pub:            "30th International Conference on Knowledge Based and Intelligent information & Engineering Systems (KES)"
+pub:            "30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES)"
+
 # pub_pre:        "Accepted at "
 # pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Oral</span>'

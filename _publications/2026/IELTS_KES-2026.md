@@ -2,7 +2,7 @@
 title:          "Improving Automated Essay Scoring with Targeted LLM-Based Data Augmentation under Imbalanced Data"
 date:           2026-05-02 00:01:00 +0800
 selected:       false
-pub:            "30th International Conference on Knowledge Based and Intelligent information & Engineering Systems (KES)"
+pub:            "30th International Conference on Knowledge-Based and Intelligent Information & Engineering Systems (KES)"
 # pub_pre:        "Accepted at "
 # pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Oral</span>'
