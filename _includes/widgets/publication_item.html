@@ -29,7 +29,7 @@
             {% when "Q4" %}{% assign journal_badge_class = "badge-journal-q4" %}
             {% endcase %}
             <p class="mt-0 mb-0 small">
-                {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }}
+                {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }}{% if include.show_pub_date %} {{ item.pub_date }}{% endif %}
                 {% if core_badge_class != "" %}<span class="badge badge-pill badge-publication {{ core_badge_class }}">CORE {{ core_rank }}</span>{% endif %}
                 {% if journal_badge_class != "" %}<span class="badge badge-pill badge-publication {{ journal_badge_class }}">{{ journal_quartile }}</span>{% endif %}
                 {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
@@ -75,7 +75,7 @@
                 {% when "Q4" %}{% assign journal_badge_class = "badge-journal-q4" %}
                 {% endcase %}
                 <p class="mt-0 mb-0 small">
-                    {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }}
+                    {{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }}{% if include.show_pub_date %} {{ item.pub_date }}{% endif %}
                     {% if core_badge_class != "" %}<span class="badge badge-pill badge-publication {{ core_badge_class }}">CORE {{ core_rank }}</span>{% endif %}
                     {% if journal_badge_class != "" %}<span class="badge badge-pill badge-publication {{ journal_badge_class }}">{{ journal_quartile }}</span>{% endif %}
                     {{ item.pub_last }} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
