@@ -72,12 +72,24 @@ navbar_title: Projects
 
     function refreshActive() {
         var viewTop = window.pageYOffset + 75;
+        var viewportHeight = window.innerHeight - 75;
         var closest = null;
-        var best = Infinity;
+        var maxVisible = -1;
 
         sections.forEach(function(s) {
-            var d = s.offsetTop - viewTop;
-            if (d <= 0 && Math.abs(d) < best) { best = Math.abs(d); closest = s.id; }
+            var sectionTop = s.offsetTop;
+            var sectionBottom = sectionTop + s.offsetHeight;
+            
+            // Tính phần giao giữa section và viewport
+            var visibleTop = Math.max(sectionTop, viewTop);
+            var visibleBottom = Math.min(sectionBottom, viewTop + viewportHeight);
+            var visibleHeight = Math.max(0, visibleBottom - visibleTop);
+            
+            // Nếu section này có nhiều phần visible nhất thì chọn
+            if (visibleHeight > maxVisible) {
+                maxVisible = visibleHeight;
+                closest = s.id;
+            }
         });
 
         if (closest) {
