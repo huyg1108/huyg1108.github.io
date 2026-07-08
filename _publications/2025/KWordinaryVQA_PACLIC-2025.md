@@ -1,7 +1,7 @@
 ---
 title:          "KWordinaryVQA: A Keyword-Driven Generative Visual Question Answering System for Culinary Exploration"
 date:           2025-09-23 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "39th Pacific Asia Conference on Language, Information and Computation (PACLIC)"
 # pub_pre:        "Accepted at "
 # pub_post:       'Under review.'
