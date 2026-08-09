@@ -6,6 +6,7 @@ positions:
 - name: Undergraduate Student
 - name: VNU-HCM University of Science
   logo: /assets/images/badges/hcmus-logo.webp
+  dark_invert: true
 
 
 email: "tghuy1108@email.com"
@@ -24,7 +25,7 @@ short_bio: >-
   <p>
   I'm currently pursuing a B.S. in Information Technology, majoring in Knowledge Engineering at the University of Science (VNU-HCM), with a strong focus on building intelligent systems. Since joining AI-Thena group at FIT-HCMUS in 2024 under the supervision of <a href="https://scholar.google.com/citations?user=MGeNXaMAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Tung Le</a> and <a href="https://scholar.google.com/citations?user=WBCZ2DcAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Huy Tien Nguyen</a>, I have explored problems chiefly in multimodal fact verification, alongside cross-lingual transfer and legal information retrieval, often leveraging large and small language models and retrieval-based reasoning techniques.
   </p>
-# Looking ahead, I aim to channel these AI capabilities into a new frontier: automated fuzzing for Web API security, with an emphasis on oracle inference and uncovering subtle response-level authorization vulnerabilities.
+
 
 portrait_url: /assets/images/photos/my_face_lol.webp
 # portrait_caption: >-
@@ -37,14 +38,30 @@ education:
 #     Department of Electrical Engineering and Computer Science <br/>
 #     Ph.D. Student
 #   date: Sep. 2024 - present
-- name: VNU-HCM University of Science
+# - name: RMIT University, Melbourne
+#   logo: /assets/images/badges/rmit-logo.webp
+#   position: >- 
+#     School of Computing Technologies <br/>
+#     PhD in Computer Science <br/>
+#   date: Feb. 2027 - Present
+
+# - name: Adelaide University, Adelaide City
+#   logo: /assets/images/badges/adelaide-logo.webp
+#   dark_invert: true
+#   position: >- 
+#     School of Computer Science and Information Technology <br/>
+#     PhD in Computer Science <br/>
+#   date: Feb. 2027 - Present
+
+- name: University of Science, VNU Ho Chi Minh City
   logo: /assets/images/badges/hcmus-logo.webp
+  dark_invert: true
   position: >- 
     Department of Knowledge Engineering <br/>
-    B.S. in Information Technology <br/>
+    Bachelor in Information Technology <br/>
   date: Sep. 2022 - Oct. 2026
 
-- name: Le Hong Phong High School for the Gifted
+- name: Le Hong Phong High School for the Gifted, Ho Chi Minh City
   logo: /assets/images/badges/lhp-logo.webp
   position: Specialized Mathematics Class
   date: Aug. 2019 - May. 2022
@@ -53,6 +70,7 @@ education:
 experience:
 - name: AI-Thena, FIT-HCMUS
   logo: /assets/images/badges/hcmus-logo.webp
+  dark_invert: true
   position: Research Student
   date: Mar. 2024 - Present
 

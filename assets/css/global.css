@@ -141,6 +141,10 @@ html[data-theme="dark"] hr {
     border-color: var(--toggle-border);
 }
 
+html[data-theme="dark"] .logo-dark-invert {
+    filter: invert(1) hue-rotate(180deg);
+}
+
 a {
     color: var(--link-color);
 }
