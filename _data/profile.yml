@@ -26,32 +26,22 @@ short_bio: >-
   I'm currently pursuing a B.S. in Information Technology, majoring in Knowledge Engineering at the University of Science (VNU-HCM), with a strong focus on building intelligent systems. Since joining AI-Thena group at FIT-HCMUS in 2024 under the supervision of <a href="https://scholar.google.com/citations?user=MGeNXaMAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Tung Le</a> and <a href="https://scholar.google.com/citations?user=WBCZ2DcAAAAJ&hl=vi&oi=ao" target="_blank">Dr. Huy Tien Nguyen</a>, I have explored problems chiefly in multimodal fact verification, alongside cross-lingual transfer and legal information retrieval, often leveraging large and small language models and retrieval-based reasoning techniques.
   </p>
 
+# <p>
+# I'm a PhD student in Computer Science at RMIT University under the supervision of Professor Jenny Zhang. My main research lie in fact checking domain, including misinformation detection, explainable AI, and deepfake detection, extending to multimodal and multilingual settings. I have a strong interest in the intersection of natural language processing, computer vision, and information retrieval, and I am passionate about developing innovative solutions to address real-world challenges in these areas.
+# </p>
+
 
 portrait_url: /assets/images/photos/my_face_lol.webp
 # portrait_caption: >-
 #   Photo by my friend when we were hanging out in the city. I look like I'm plotting something, but actually, I'm just trying to find the best angle for the photo.
 
 education:
-# - name: VNU-HCM University of Science
-#   logo: /assets/images/badges/MIT_Social_circle.png
-#   position: >- 
-#     Department of Electrical Engineering and Computer Science <br/>
-#     Ph.D. Student
-#   date: Sep. 2024 - present
-# - name: RMIT University, Melbourne
-#   logo: /assets/images/badges/rmit-logo.webp
-#   position: >- 
-#     School of Computing Technologies <br/>
-#     PhD in Computer Science <br/>
-#   date: Feb. 2027 - Present
-
-# - name: Adelaide University, Adelaide City
-#   logo: /assets/images/badges/adelaide-logo.webp
-#   dark_invert: true
-#   position: >- 
-#     School of Computer Science and Information Technology <br/>
-#     PhD in Computer Science <br/>
-#   date: Feb. 2027 - Present
+- name: ???????
+  # logo: /assets/images/badges/rmit-logo.webp
+  position: >- 
+    School of Computing Technologies <br/>
+    PhD in Computer Science <br/>
+  date: (I haven't decided yet) - ???
 
 - name: University of Science, VNU Ho Chi Minh City
   logo: /assets/images/badges/hcmus-logo.webp
