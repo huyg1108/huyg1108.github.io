@@ -36,12 +36,12 @@ portrait_url: /assets/images/photos/my_face_lol.webp
 #   Photo by my friend when we were hanging out in the city. I look like I'm plotting something, but actually, I'm just trying to find the best angle for the photo.
 
 education:
-- name: ???????
-  # logo: /assets/images/badges/rmit-logo.webp
-  position: >- 
-    School of Computing Technologies <br/>
-    PhD in Computer Science <br/>
-  date: (I haven't decided yet) - ???
+# - name: ???????
+#   # logo: /assets/images/badges/rmit-logo.webp
+#   position: >- 
+#     School of Computing Technologies <br/>
+#     PhD in Computer Science <br/>
+#   date: (I haven't decided yet) - ???
 
 - name: University of Science, VNU Ho Chi Minh City
   logo: /assets/images/badges/hcmus-logo.webp
